@@ -14,6 +14,10 @@ gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+gem 'uglifier', '~> 4.2'
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '~> 5.0'
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
@@ -24,6 +28,15 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
+gem 'bulma-rails', '~> 0.9.1'
+gem 'simple_form', '~> 5.1'
+gem 'devise', '~> 4.8'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'jquery-rails', '~> 4.4'
+gem 'wysiwyg-rails', '~> 4.0', '>= 4.0.1'
+gem 'public_activity', '~> 1.6', '>= 1.6.4'
+gem 'figaro', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -42,6 +55,13 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # Provides a better error page for Rails and other Rack apps. Includes source code inspection, a live REPL and local/instance variable inspection for all stack frames.
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  # Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.18'
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  #
 end
 
 group :test do
